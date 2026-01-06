@@ -331,8 +331,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row gap-16 items-center">
             <div className="md:w-1/2">
-              <h2 className="font-display font-bold text-5xl mb-8 text-mercan-900">{t.vision.title}</h2>
-              <p className="text-xl text-gray-600 font-light leading-relaxed">
+              <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl mb-8 text-mercan-900 break-words">{t.vision.title}</h2>
+              <p className="text-lg md:text-xl text-gray-600 font-light leading-relaxed">
                 {t.vision.desc}
               </p>
             </div>
@@ -354,7 +354,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-20">
             <span className="text-mercan-coral font-mono text-sm tracking-wider uppercase">{t.solutions.label}</span>
-            <h2 className="font-display font-bold text-5xl mt-2 text-mercan-900">{t.solutions.title}</h2>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl mt-2 text-mercan-900 break-words">{t.solutions.title}</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {t.features.map((item, i) => (
@@ -386,7 +386,7 @@ function App() {
           >
             <div>
               <span className="text-mercan-coral font-mono text-sm tracking-wider uppercase">{t.portfolio.label}</span>
-              <h2 className="font-display font-bold text-5xl mt-2 text-mercan-900">{t.portfolio.title}</h2>
+              <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl mt-2 text-mercan-900 break-words">{t.portfolio.title}</h2>
             </div>
             <div className="hidden md:block w-32 h-px bg-gray-200 mb-4" />
           </motion.div>
@@ -440,7 +440,7 @@ function App() {
                     <span className="font-mono text-sm text-gray-500">{project.subtitle}</span>
                   </div>
                   
-                  <h3 className="font-display font-bold text-4xl mb-6 text-mercan-900 group-hover:text-mercan-coral transition-colors duration-300">
+                  <h3 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl mb-6 text-mercan-900 group-hover:text-mercan-coral transition-colors duration-300">
                     {project.title}
                   </h3>
                   
