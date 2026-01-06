@@ -269,8 +269,8 @@ function App() {
       />
 
       <nav className="fixed top-0 left-0 right-0 z-40 flex justify-center pt-6 px-4">
-        <div className="glass-card px-6 py-3 rounded-full flex items-center space-x-8 shadow-xl border border-black/5 bg-white/70 backdrop-blur-md">
-          <span className="font-display font-bold text-xl tracking-tighter text-mercan-900">
+        <div className="glass-card px-4 md:px-6 py-3 rounded-full flex items-center space-x-4 md:space-x-8 shadow-xl border border-black/5 bg-white/70 backdrop-blur-md">
+          <span className="font-display font-bold text-lg md:text-xl tracking-tighter text-mercan-900">
             MERCAN<span className="text-mercan-coral">.</span>
           </span>
           <div className="hidden md:flex space-x-6 text-sm font-medium text-gray-400">
@@ -305,7 +305,7 @@ function App() {
             <span className="text-xs font-mono text-gray-500 tracking-wider uppercase">{t.hero.badge}</span>
           </motion.div>
 
-          <h1 className="font-display font-bold text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[1.1] mb-8 text-mercan-900">
+          <h1 className="font-display font-bold text-3xl sm:text-4xl md:text-7xl lg:text-8xl tracking-tight leading-tight md:leading-[1.1] mb-8 text-mercan-900 break-words">
             {t.hero.title1} <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-mercan-coral via-mercan-900 to-mercan-teal">
               {t.hero.title2}
@@ -559,7 +559,7 @@ function App() {
       <section id="contact" className="py-32 relative z-10 overflow-hidden border-t border-gray-100">
         <div className="absolute inset-0 bg-gradient-to-t from-mercan-coral/5 to-transparent pointer-events-none" />
         <div className="max-w-4xl mx-auto px-6 text-center relative z-20">
-          <h2 className="font-display font-bold text-5xl md:text-7xl mb-8 text-mercan-900">
+          <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-7xl mb-8 text-mercan-900 break-words">
             {t.cta.title} <span className="text-transparent bg-clip-text bg-gradient-to-r from-mercan-coral to-mercan-violet">{t.cta.titleAccent}</span>
           </h2>
           <p className="text-xl text-gray-500 mb-12 font-light">{t.cta.desc}</p>
