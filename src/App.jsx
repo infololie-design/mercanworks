@@ -20,9 +20,9 @@ const translations = {
       { title: "GDPR & Etik AI", desc: "Veri mahremiyetine ve insan onuruna saygılı şeffaf algoritmalar.", icon: ShieldCheck }
     ],
     features: [
-      { title: "Business Intelligence (BI) & Data Mining", desc: "Veri yığınlarını anlamlı stratejilere dönüştüren, rekabet avantajı sağlayan kurumsal paneller.", icon: BarChart3 },
-      { title: "Custom AI Development", desc: "Şirketinize özel eğitilmiş LLM modelleri ve süreç otomasyonu (RPA) çözümleri.", icon: Code2 },
-      { title: "Digital Transformation Consultancy", desc: "Avrupa standartlarında dijitalleşme yol haritası ve teknoloji danışmanlığı.", icon: Sparkles }
+      { title: "İş Zekası (BI) & Veri Madenciliği", desc: "Veri yığınlarını anlamlı stratejilere dönüştüren, rekabet avantajı sağlayan kurumsal paneller.", icon: BarChart3 },
+      { title: "Özel Yapay Zeka Geliştirme", desc: "Şirketinize özel eğitilmiş LLM modelleri ve süreç otomasyonu (RPA) çözümleri.", icon: Code2 },
+      { title: "Dijital Dönüşüm Danışmanlığı", desc: "Avrupa standartlarında dijitalleşme yol haritası ve teknoloji danışmanlığı.", icon: Sparkles }
     ],
     portfolio: { label: "Labs", title: "Deneysel Projeler", viewCase: "İncele" },
     solutions: { label: "Solutions", title: "Hizmetlerimiz" },
@@ -41,7 +41,7 @@ const translations = {
     projects: [
       {
         title: "GÖLGE",
-        subtitle: "The Shadow Self AI",
+        subtitle: "Gölge Benlik Analizi",
         desc: "Jung psikolojisi tabanlı, uçtan uca şifreli kişisel farkındalık asistanı.",
         challenge: ["Mevcut mental sağlık uygulamaları genellikle yüzeysel olumlamalarla sınırlı kalmakta ve kullanıcının bilinçaltı kök sorunlarına inememektedir.", "Kullanıcıların en mahrem itiraflarını paylaşabileceği %100 güvenli ve yargısız bir dijital alan eksikliği bulunmaktadır."],
         solution: ["Carl Jung'un 'Gölge Benlik' teorisini işleyen özel bir LLM (Large Language Model) mimarisi geliştirdik.", "Kriz protokollerine sahip bu yapay zeka, kullanıcıyı teselli etmek yerine doğru sorularla yüzleştirir.", "Veriler, askeri düzeyde şifreleme ile korunur ve tamamen anonimdir."],
@@ -53,7 +53,7 @@ const translations = {
       },
       {
         title: "MERCY AND DESTINY",
-        subtitle: "Social Goodness Platform",
+        subtitle: "Sosyal İyilik Platformu",
         desc: "Dijital toksisiteye karşı geliştirilen, lokasyon bazlı ve geçici içerikli 'İyilik' ağı.",
         challenge: ["Sosyal medya platformları, kullanıcıları bağımlı kılan dopamin döngüleri ve siber zorbalık üzerine kuruludur.", "İnsanlar, dijital kalabalıklar içinde yalnızlaşmakta ve çevrelerindeki gerçek 'iyilik' potansiyelini görememektedir."],
         solution: ["Kullanıcıların ayda sadece 1 fotoğraf hakkı vardır.", "Yüklenen 'İyilik' fotoğrafları, zamanla piksel piksel silinerek 'An'ın geçiciliğini' vurgular.", "Her paylaşım, kullanıcının 5-10km yarıçapındaki haritada anonim bir 'İyilik Pini' oluşturarak yerel topluluk bilincini artırır."],
@@ -65,7 +65,7 @@ const translations = {
       },
       {
         title: "ECOMEYE",
-        subtitle: "E-Commerce Intelligence",
+        subtitle: "E-Ticaret Zekası",
         desc: "E-ticaret operasyonlarındaki gizli giderleri ve kargo açıklarını yakalayan AI CFO.",
         challenge: ["E-ticaret yöneticileri, brüt ciroya odaklanırken 'görünmez giderler' nedeniyle net kârlarında %15-%20'ye varan kayıplar yaşamaktadır.", "Manuel takibi imkansız olan hatalı desi ölçümleri, ölü stok maliyetleri ve komisyon hataları nakit akışını bozmaktadır."],
         solution: ["Kargo entegrasyonu ile kesilen faturalardaki hatalı desi ölçümlerini otomatik tespit eder.", "Ürün bazlı net kârlılığı (Unit Economics) anlık hesaplar.", "Stok devir hızını analiz ederek 'Ölü Stokları' nakde çevirme stratejisi sunar."],
@@ -150,6 +150,80 @@ const translations = {
         theme: "tech"
       }
     ]
+  },
+  de: {
+    nav: { manifesto: "Unsere Vision", works: "Labs", solutions: "Solutions", contact: "Kontakt" },
+    hero: {
+      badge: "Nordic Tech & Innovation",
+      title1: "Jenseits des Codes,",
+      title2: "KI-Engineering nach europäischen Standards.",
+      desc: "Mercan Works verbindet Estlands Kultur der digitalen Innovation mit künstlicher Intelligenz. Von Jung'scher Psychologie bis hin zu komplexer E-Commerce-Business-Intelligence sind wir ein Technologiestudio der neuen Generation, das globale SaaS- und Mobil-Lösungen entwickelt."
+    },
+    vision: {
+      title: "Nordeuropäische Disziplin, Globale Vision",
+      desc: "Inspiriert von Tallinn, dem Herzen der Technologiewelt, stellen wir Datenschutz (DSGVO) und ethische Programmierung ins Zentrum unseres Schaffens. Wir entwickeln nicht nur Software; wir erschaffen 'Calm Tech', der die menschliche Psychologie respektiert, sowie analytische Intelligenzsysteme, die die Profitabilität steigern. Vom MVP bis zum Scale-up liefern wir Engineering auf europäischem Spitzenniveau."
+    },
+    visionBoxes: [
+      { title: "Global & Remote", desc: "Eine grenzenlose, in Estland ansässige digitale Nomadenkultur.", icon: Globe2 },
+      { title: "DSGVO & Ethische KI", desc: "Transparente Algorithmen, die den Datenschutz und die menschliche Würde respektieren.", icon: ShieldCheck }
+    ],
+    features: [
+      { title: "Business Intelligence (BI) & Data Mining", desc: "Unternehmens-Dashboards, die Datenmengen in aussagekräftige Strategien für Wettbewerbsvorteile verwandeln.", icon: BarChart3 },
+      { title: "Maßgeschneiderte KI-Entwicklung", desc: "Speziell trainierte LLM-Modelle und Prozessautomatisierung (RPA) für Ihr Unternehmen.", icon: Code2 },
+      { title: "Beratung zur digitalen Transformation", desc: "Roadmap zur Digitalisierung und Technologieberatung nach europäischen Standards.", icon: Sparkles }
+    ],
+    portfolio: { label: "Labs", title: "Experimentelle Projekte", viewCase: "Prüfen" },
+    solutions: { label: "Solutions", title: "Unsere Dienstleistungen" },
+    modal: {
+      challenge: "Herausforderung",
+      solution: "Lösung",
+      impact: "Auswirkung",
+      visit: "Kontaktieren Sie uns"
+    },
+    cta: {
+      title: "Bringen Sie Ihr Geschäft",
+      titleAccent: "über Grenzen hinweg.",
+      desc: "Optimieren Sie Ihre E-Commerce- und Außenhandelsgeschäfte mit unserem datengesteuerten Ansatz. Ob Produktbeschaffung oder strategische Beratung – sichern Sie sich mit Mercan Works einen starken Platz auf dem globalen Markt.",
+      button: "Kontaktieren Sie uns"
+    },
+    projects: [
+      {
+        title: "SHADOW",
+        subtitle: "Schatten-Selbst-Analyse",
+        desc: "End-zu-End verschlüsselter persönlicher Bewusstseins-Assistent basierend auf Jung'scher Psychologie.",
+        challenge: ["Bestehende Apps für mentale Gesundheit bleiben oft bei oberflächlichen Affirmationen stehen und erreichen nicht die unterbewussten Wurzelprobleme.", "Es fehlt an einem 100% sicheren, urteilsfreien digitalen Raum für intimste Geständnisse."],
+        solution: ["Wir haben eine eigene LLM-Architektur entwickelt, die Carl Jungs Theorie vom 'Schatten-Selbst' verarbeitet.", "Diese KI, ausgestattet mit Krisenprotokollen, konfrontiert den Nutzer mit den richtigen Fragen, anstatt nur Trost zu spenden.", "Die Daten sind durch militärische Verschlüsselung geschützt und bleiben völlig anonym."],
+        impact: ["In geschlossenen Betatests berichteten 85% der Nutzer von einer schnelleren emotionalen Erleichterung (Katharsis) im Vergleich zu herkömmlichen Methoden.", "Ein KI-Modell zur 'Psychologischen Archetypen-Analyse' wurde erstmals in der Branche erfolgreich implementiert."],
+        color: "from-sky-500 to-indigo-600",
+        icon: <Brain className="w-6 h-6" />,
+        tech: ["Psychometrics", "Generative AI", "Encryption"],
+        theme: "dark"
+      },
+      {
+        title: "MERCY AND DESTINY",
+        subtitle: "Plattform für soziales Wohlbefinden",
+        desc: "Standortbasiertes Netzwerk für das Gemeinwohl mit flüchtigen Inhalten, entwickelt gegen digitale Toxizität.",
+        challenge: ["Social-Media-Plattformen basieren auf Dopamin-Schleifen und Cybermobbing, die Nutzer süchtig machen.", "Menschen vereinsamen in digitalen Massen und erkennen das reale 'Güte'-Potenzial um sie herum nicht."],
+        solution: ["Nutzer haben nur 1 Fotorecht pro Monat.", "Hochgeladene 'Güte'-Fotos verpixeln und verblassen mit der Zeit, was die 'Vergänglichkeit des Augenblicks' betont.", "Jeder Post erstellt einen anonymen 'Güte-Pin' auf einer Karte im Umkreis von 5-10km, was das Bewusstsein für die lokale Gemeinschaft stärkt."],
+        impact: ["Die 'Slow Tech'-Bewegung wurde gestartet, die Social-Media-Müdigkeit eliminiert und Zusammenarbeit statt Wettbewerb fördert.", "Ein MVP, das darauf abzielt, das Zugehörigkeitsgefühl in lokalen Gemeinschaften um 90% zu steigern."],
+        color: "from-rose-400 to-purple-500",
+        icon: <Heart className="w-6 h-6" />,
+        tech: ["Social Engineering", "Anti-Dopamine", "Geo-Location"],
+        theme: "light"
+      },
+      {
+        title: "ECOMEYE",
+        subtitle: "E-Commerce-Intelligenz",
+        desc: "KI-CFO, der versteckte Kosten und Versandunstimmigkeiten im E-Commerce-Betrieb aufdeckt.",
+        challenge: ["E-Commerce-Manager konzentrieren sich auf den Bruttoumsatz, während sie 15%-20% des Nettogewinns durch 'unsichtbare Kosten' verlieren.", "Manuelle Nachverfolgung ist bei falschen Versandmaßen, Lagerhüterkosten und Marktplatz-Provisionsfehlern unmöglich."],
+        solution: ["Erkennt automatisch falsche Maßangaben in Rechnungen über die Versandintegration.", "Berechnet sofort die Unit Economics.", "Analysiert den Lagerumschlag, um Strategien zu liefern, wie 'totes Kapital' in Bargeld umgewandelt werden kann."],
+        impact: ["Pilotunternehmen erzielten allein durch die Erkennung von Versandverlusten eine durchschnittliche monatliche Kostenersparnis von 12%.", "Geschäftsinhaber erhielten eine proaktive und präventive Finanzvision statt überraschender Steuer- und Kostentabellen am Monatsende."],
+        color: "from-emerald-500 to-cyan-600",
+        icon: <BarChart3 className="w-6 h-6" />,
+        tech: ["FinTech", "Predictive Analytics", "Automation"],
+        theme: "tech"
+      }
+    ]
   }
 };
 
@@ -180,6 +254,12 @@ function App() {
     window.location.href = "mailto:info@mercanworks.com?subject=Inquiry for AI and Software Solutions";
   };
 
+  const toggleLanguage = () => {
+    const langs = ['tr', 'en', 'de'];
+    const nextIdx = (langs.indexOf(lang) + 1) % langs.length;
+    setLang(langs[nextIdx]);
+  };
+
   return (
     <div className="min-h-screen bg-mercan-50 text-mercan-900 font-sans selection:bg-mercan-coral selection:text-white overflow-hidden">
       
@@ -200,10 +280,10 @@ function App() {
             <a href="#contact" className="hover:text-mercan-900 transition-colors">{t.nav.contact}</a>
           </div>
           <button 
-            onClick={() => setLang(lang === 'tr' ? 'en' : 'tr')}
+            onClick={toggleLanguage}
             className="bg-mercan-900 hover:bg-black text-white px-4 py-1.5 rounded-full text-xs font-mono transition-all uppercase cursor-pointer"
           >
-            {lang === 'tr' ? 'EN' : 'TR'}
+            {lang}
           </button>
         </div>
       </nav>
@@ -503,7 +583,7 @@ function App() {
              <a href="#" className="hover:text-mercan-coral transition-colors">Twitter</a>
           </div>
           <div className="mt-4 md:mt-0 text-xs text-gray-400 font-mono">
-            © 2026 Mercan Works. {lang === 'tr' ? 'Tüm hakları saklıdır.' : 'All rights reserved.'}
+            © 2026 Mercan Works. {lang === 'tr' ? 'Tüm hakları saklıdır.' : lang === 'en' ? 'All rights reserved.' : 'Alle Rechte vorbehalten.'}
           </div>
         </div>
       </footer>
