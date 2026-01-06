@@ -1,134 +1,152 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring, AnimatePresence } from 'framer-motion';
-import { Sparkles, Brain, Heart, BarChart3, X, Layers, Zap, Trophy, ArrowUpRight } from 'lucide-react';
+import { Sparkles, Brain, Heart, BarChart3, X, Layers, Zap, Trophy, ArrowUpRight, Code2, Globe2, ShieldCheck, ZapIcon } from 'lucide-react';
 
 const translations = {
   tr: {
-    nav: { manifesto: "Manifesto", works: "İşler", contact: "İletişim" },
+    nav: { manifesto: "Vizyonumuz", works: "Labs", solutions: "Solutions", contact: "İletişim" },
     hero: {
-      badge: "Dijital Etkileşimin Geleceği",
-      title1: "Dijital",
-      title2: "Simya",
-      desc: "Mercan Works, karmaşık iş süreçlerini modern teknolojilerle basitleştirir. Stratejik veri analitiği ve kullanıcı deneyimi odaklı yaklaşımımızla dijital potansiyelinizi açığa çıkarıyoruz."
+      badge: "Nordic Tech & Innovation",
+      title1: "Kodun Ötesinde,",
+      title2: "Avrupa Standartlarında Yapay Zeka Mühendisliği.",
+      desc: "Mercan Works, Estonya'nın dijital inovasyon kültürünü yapay zeka ile birleştiriyor. Jung psikolojisinden kompleks e-ticaret iş zekasına kadar, global ölçekte SaaS ve mobil çözümler üreten yeni nesil teknoloji stüdyosu."
     },
-    features: [
-      { title: "Stratejik Veri", desc: "Veri odaklı kararlar ile belirsizliği ortadan kaldırıyoruz.", icon: BarChart3 },
-      { title: "İnsan Odaklı", desc: "Teknoloji insan içindir. Kullanıcı deneyimini merkeze alıyoruz.", icon: Heart },
-      { title: "Geleceğe Hazır", desc: "Yapay zeka entegrasyonu ile yarına bugünden hazır olun.", icon: Sparkles }
+    vision: {
+      title: "Kuzey Avrupa Disiplini, Global Vizyon",
+      desc: "Teknoloji dünyasının kalbi Tallinn'den ilham alarak, veri gizliliğini (GDPR) ve etik kodlamayı merkeze koyuyoruz. Sadece yazılım üretmiyoruz; insan psikolojisine saygılı 'Huzurlu Teknoloji' (Calm Tech) ve işletmelere kârlılık katan 'Analitik Zeka' sistemleri inşa ediyoruz. MVP sürecinden Scale-up aşamasına kadar, Avrupa standartlarında mühendislik sunuyoruz."
+    },
+    visionBoxes: [
+      { title: "Global & Remote", desc: "Sınırlara inanmayan, Estonya merkezli dijital göçebe kültürü.", icon: Globe2 },
+      { title: "GDPR & Etik AI", desc: "Veri mahremiyetine ve insan onuruna saygılı şeffaf algoritmalar.", icon: ShieldCheck }
     ],
-    portfolio: { label: "Portfolyo", title: "Seçili İşler", viewCase: "İncele" },
+    features: [
+      { title: "Business Intelligence (BI) & Data Mining", desc: "Veri yığınlarını anlamlı stratejilere dönüştüren, rekabet avantajı sağlayan kurumsal paneller.", icon: BarChart3 },
+      { title: "Custom AI Development", desc: "Şirketinize özel eğitilmiş LLM modelleri ve süreç otomasyonu (RPA) çözümleri.", icon: Code2 },
+      { title: "Digital Transformation Consultancy", desc: "Avrupa standartlarında dijitalleşme yol haritası ve teknoloji danışmanlığı.", icon: Sparkles }
+    ],
+    portfolio: { label: "Labs", title: "Deneysel Projeler", viewCase: "İncele" },
+    solutions: { label: "Solutions", title: "Hizmetlerimiz" },
     modal: {
       challenge: "Zorluk",
       solution: "Çözüm",
       impact: "Etki",
-      visit: "Canlı Siteyi Gör"
+      visit: "Bize Ulaşın"
     },
     cta: {
-      title: "Gelişmeye",
-      titleAccent: "Hazır mısınız?",
-      desc: "Bir sonraki büyük fikrinizi hayata geçirelim.",
+      title: "İşinizi Sınırların",
+      titleAccent: "Ötesine Taşıyın.",
+      desc: "Veri odaklı yaklaşımımızla e-ticaret ve dış ticaret operasyonlarınızı optimize ediyoruz. İster ürün tedariki ister stratejik danışmanlık ihtiyacınız olsun; Mercan Works ile global pazarda sağlam bir yer edinin.",
       button: "Bize Ulaşın"
     },
     projects: [
       {
-        title: "Gölge",
-        subtitle: "İçsel Farkındalık Analitiği",
-        desc: "Kullanıcıların kendi psikolojik süreçlerini analiz edebilecekleri, içsel farkındalık odaklı derinlikli bir analiz uygulaması.",
-        challenge: "Geleneksel günlük uygulamaları pasiftir ve zihinsel sağlık için aksiyon alınabilir veriler sunmaz.",
-        solution: "Duygu durum kalıplarını zaman içinde analiz eden ve duygusal yörüngeleri görselleştiren yapay zeka destekli bir motor geliştirdik.",
-        impact: ["Günlük kullanıcı tutma oranında %40 artış", "'Yeni ve Dikkat Çekici' bölümünde öne çıktı", "1 milyondan fazla günlük girişi işlendi"],
+        title: "GÖLGE",
+        subtitle: "The Shadow Self AI",
+        desc: "Jung psikolojisi tabanlı, uçtan uca şifreli kişisel farkındalık asistanı.",
+        challenge: ["Mevcut mental sağlık uygulamaları genellikle yüzeysel olumlamalarla sınırlı kalmakta ve kullanıcının bilinçaltı kök sorunlarına inememektedir.", "Kullanıcıların en mahrem itiraflarını paylaşabileceği %100 güvenli ve yargısız bir dijital alan eksikliği bulunmaktadır."],
+        solution: ["Carl Jung'un 'Gölge Benlik' teorisini işleyen özel bir LLM (Large Language Model) mimarisi geliştirdik.", "Kriz protokollerine sahip bu yapay zeka, kullanıcıyı teselli etmek yerine doğru sorularla yüzleştirir.", "Veriler, askeri düzeyde şifreleme ile korunur ve tamamen anonimdir."],
+        impact: ["Kapalı beta testlerinde kullanıcıların %85'i, geleneksel yöntemlere göre daha hızlı bir duygusal rahatlama (Catharsis) yaşadığını bildirdi.", "Sektörde ilk kez 'Psikolojik Arketip Analizi' yapan bir AI modeli başarıyla uygulandı."],
         color: "from-sky-500 to-indigo-600",
         icon: <Brain className="w-6 h-6" />,
-        tech: ["AI Analysis", "Psychometrics", "React Native"],
+        tech: ["Psychometrics", "Generative AI", "Encryption"],
         theme: "dark"
       },
       {
-        title: "Mercy and Destiny",
-        subtitle: "Yavaş Sosyal Medya",
-        desc: "Nezaket ve etik etkileşim odaklı, insan ruhunu yormayan sosyal platform. Slow social media akımının öncüsü.",
-        challenge: "Sosyal medyadaki toksisite ve dopamin odaklı döngüler kullanıcıların zihinsel sağlığına zarar veriyor.",
-        solution: "Düşünceli yanıtları ödüllendiren ve sonsuz kaydırmayı sınırlayan 'Yavaş Mod' etkileşim modeli.",
-        impact: ["Betada sıfır siber zorbalık vakası", "Ortalama oturum süresi 3 dakika arttı", "Topluluk 10 bin organik kullanıcıya ulaştı"],
+        title: "MERCY AND DESTINY",
+        subtitle: "Social Goodness Platform",
+        desc: "Dijital toksisiteye karşı geliştirilen, lokasyon bazlı ve geçici içerikli 'İyilik' ağı.",
+        challenge: ["Sosyal medya platformları, kullanıcıları bağımlı kılan dopamin döngüleri ve siber zorbalık üzerine kuruludur.", "İnsanlar, dijital kalabalıklar içinde yalnızlaşmakta ve çevrelerindeki gerçek 'iyilik' potansiyelini görememektedir."],
+        solution: ["Kullanıcıların ayda sadece 1 fotoğraf hakkı vardır.", "Yüklenen 'İyilik' fotoğrafları, zamanla piksel piksel silinerek 'An'ın geçiciliğini' vurgular.", "Her paylaşım, kullanıcının 5-10km yarıçapındaki haritada anonim bir 'İyilik Pini' oluşturarak yerel topluluk bilincini artırır."],
+        impact: ["Sosyal medya yorgunluğunu (Social Media Fatigue) ortadan kaldıran, rekabet yerine iş birliğini teşvik eden 'Yavaş Teknoloji' (Slow Tech) hareketi başlatıldı.", "Yerel topluluklarda aidiyet duygusunu %90 artırmayı hedefleyen bir MVP."],
         color: "from-rose-400 to-purple-500",
         icon: <Heart className="w-6 h-6" />,
-        tech: ["Ethical UX", "Community", "Node.js"],
+        tech: ["Social Engineering", "Anti-Dopamine", "Geo-Location"],
         theme: "light"
       },
       {
-        title: "EcomEye",
-        subtitle: "Stratejik İş Zekası",
-        desc: "E-ticaret dünyası için veri analitiği ve pazar takibi sağlayan, stratejik bir iş zekası aracı.",
-        challenge: "E-ticaret yöneticileri veri içinde boğuluyor ancak rakip fiyatlandırması konusunda aksiyon alınabilir bilgiden yoksun.",
-        solution: "Gerçek zamanlı veri çekme ve fiyatlandırma stratejileri öneren tahmine dayalı analitik paneli.",
-        impact: ["Pilot müşterilerde %15 gelir artışı", "Analiz süresini %90 azalttı", "Günlük 50 binden fazla SKU takibi"],
+        title: "ECOMEYE",
+        subtitle: "E-Commerce Intelligence",
+        desc: "E-ticaret operasyonlarındaki gizli giderleri ve kargo açıklarını yakalayan AI CFO.",
+        challenge: ["E-ticaret yöneticileri, brüt ciroya odaklanırken 'görünmez giderler' nedeniyle net kârlarında %15-%20'ye varan kayıplar yaşamaktadır.", "Manuel takibi imkansız olan hatalı desi ölçümleri, ölü stok maliyetleri ve komisyon hataları nakit akışını bozmaktadır."],
+        solution: ["Kargo entegrasyonu ile kesilen faturalardaki hatalı desi ölçümlerini otomatik tespit eder.", "Ürün bazlı net kârlılığı (Unit Economics) anlık hesaplar.", "Stok devir hızını analiz ederek 'Ölü Stokları' nakde çevirme stratejisi sunar."],
+        impact: ["Pilot işletmelerde, sadece kargo kaçağı tespitiyle aylık ortalama %12 maliyet tasarrufu sağlandı.", "İşletme sahiplerine proaktif ve önleyici bir finansal vizyon kazandırıldı."],
         color: "from-emerald-500 to-cyan-600",
         icon: <BarChart3 className="w-6 h-6" />,
-        tech: ["Big Data", "Analytics", "Dashboard"],
+        tech: ["FinTech", "Predictive Analytics", "Automation"],
         theme: "tech"
       }
     ]
   },
   en: {
-    nav: { manifesto: "Manifesto", works: "Works", contact: "Contact" },
+    nav: { manifesto: "Our Vision", works: "Labs", solutions: "Solutions", contact: "Contact" },
     hero: {
-      badge: "Future of Digital Interaction",
-      title1: "Digital",
-      title2: "Alchemy",
-      desc: "Mercan Works simplifies complex business processes with modern technologies. We unlock your digital potential with our strategic data analytics and user experience-oriented approach."
+      badge: "Nordic Tech & Innovation",
+      title1: "Beyond Code,",
+      title2: "European Standards in AI Engineering.",
+      desc: "Mercan Works merges Estonia's digital innovation culture with artificial intelligence. From Jungian psychology to complex e-commerce business intelligence, we are a new-generation tech studio building global SaaS and mobile solutions."
     },
-    features: [
-      { title: "Strategic Data", desc: "We eliminate uncertainty with data-driven decisions.", icon: BarChart3 },
-      { title: "Human Centric", desc: "Technology is for people. We put user experience at the center.", icon: Heart },
-      { title: "Future Ready", desc: "Be ready for tomorrow today with AI integration.", icon: Sparkles }
+    vision: {
+      title: "Northern European Discipline, Global Vision",
+      desc: "Inspired by Tallinn, the heart of the tech world, we place data privacy (GDPR) and ethical coding at our core. We don't just build software; we build 'Calm Tech' that respects human psychology and 'Analytical Intelligence' systems that drive profitability. From MVP to Scale-up, we deliver engineering at European standards."
+    },
+    visionBoxes: [
+      { title: "Global & Remote", desc: "A borderless, Estonia-based digital nomad culture.", icon: Globe2 },
+      { title: "GDPR & Ethical AI", desc: "Transparent algorithms respecting data privacy and human dignity.", icon: ShieldCheck }
     ],
-    portfolio: { label: "Portfolio", title: "Selected Works", viewCase: "View Case Study" },
+    features: [
+      { title: "Business Intelligence (BI) & Data Mining", desc: "Enterprise dashboards transforming data piles into meaningful strategies for competitive advantage.", icon: BarChart3 },
+      { title: "Custom AI Development", desc: "Custom-trained LLM models and robotic process automation (RPA) solutions for your company.", icon: Code2 },
+      { title: "Digital Transformation Consultancy", desc: "Digitalization roadmap and technology consultancy at European standards.", icon: Sparkles }
+    ],
+    portfolio: { label: "Labs", title: "Experimental Projects", viewCase: "Review" },
+    solutions: { label: "Solutions", title: "Our Services" },
     modal: {
       challenge: "The Challenge",
       solution: "The Solution",
-      impact: "Key Impact",
-      visit: "Visit Live Site"
+      impact: "Impact",
+      visit: "Contact Us"
     },
     cta: {
-      title: "Ready to",
-      titleAccent: "Evolve?",
-      desc: "Let's bring your next big idea to life.",
+      title: "Take Your Business",
+      titleAccent: "Beyond Borders.",
+      desc: "Optimize your e-commerce and foreign trade operations with our data-driven approach. Whether you need product sourcing or strategic consultancy, secure a strong place in the global market with Mercan Works.",
       button: "Contact Us"
     },
     projects: [
       {
-        title: "Gölge",
-        subtitle: "Inner Awareness Analytics",
-        desc: "An in-depth analysis application focused on inner awareness where users can analyze their own psychological processes.",
-        challenge: "Traditional journaling apps are passive and lack actionable insights for mental well-being.",
-        solution: "We developed an AI-driven engine that analyzes sentiment patterns over time, visualizing emotional trajectories.",
-        impact: ["40% increase in daily user retention", "Featured in 'New & Noteworthy'", "Processed 1M+ journal entries"],
+        title: "SHADOW",
+        subtitle: "The Shadow Self AI",
+        desc: "End-to-end encrypted personal awareness assistant based on Jungian psychology.",
+        challenge: ["Existing mental health apps often stay limited to superficial affirmations and fail to reach the user's subconscious root issues.", "There's a lack of a 100% secure, non-judgmental digital space for intimate confessions."],
+        solution: ["We developed a custom LLM architecture processing Carl Jung's 'Shadow Self' theory.", "This AI, equipped with crisis protocols, confronts the user with the right questions instead of just offering comfort.", "Data is protected by military-grade encryption and remains completely anonymous."],
+        impact: ["In closed beta tests, 85% of users reported faster emotional relief (Catharsis) compared to traditional methods.", "An AI model performing 'Psychological Archetype Analysis' was successfully implemented for the first time in the industry."],
         color: "from-sky-500 to-indigo-600",
         icon: <Brain className="w-6 h-6" />,
-        tech: ["AI Analysis", "Psychometrics", "React Native"],
+        tech: ["Psychometrics", "Generative AI", "Encryption"],
         theme: "dark"
       },
       {
-        title: "Mercy and Destiny",
-        subtitle: "Slow Social Media",
-        desc: "A social platform focused on kindness and ethical interaction that does not tire the human soul. Pioneer of the slow social media movement.",
-        challenge: "Social media toxicity and dopamine-driven engagement loops harm user mental health.",
-        solution: "A 'Slow Mode' interaction model that rewards thoughtful responses and limits doom-scrolling.",
-        impact: ["Zero cyberbullying incidents in beta", "Avg. session time increased by 3 mins", "Community grew to 10k organic users"],
+        title: "MERCY AND DESTINY",
+        subtitle: "Social Goodness Platform",
+        desc: "Location-based goodness network with ephemeral content, developed against digital toxicity.",
+        challenge: ["Social media platforms are built on dopamine loops and cyberbullying that make users addicted.", "People are becoming lonely in digital crowds and failing to see the real 'goodness' potential around them."],
+        solution: ["Users have only 1 photo right per month.", "Uploaded 'Goodness' photos pixelate and fade over time, emphasizing the 'transience of the moment'.", "Each post creates an anonymous 'Goodness Pin' on a 5-10km radius map, increasing local community awareness."],
+        impact: ["The 'Slow Tech' movement was launched, eliminating social media fatigue and encouraging collaboration over competition.", "An MVP aimed at increasing the sense of belonging in local communities by 90%."],
         color: "from-rose-400 to-purple-500",
         icon: <Heart className="w-6 h-6" />,
-        tech: ["Ethical UX", "Community", "Node.js"],
+        tech: ["Social Engineering", "Anti-Dopamine", "Geo-Location"],
         theme: "light"
       },
       {
-        title: "EcomEye",
-        subtitle: "Strategic Business Intelligence",
-        desc: "A strategic business intelligence tool providing data analytics and market tracking for the e-commerce world.",
-        challenge: "E-commerce managers drown in data but starve for actionable insights on competitor pricing.",
-        solution: "Real-time scraper and predictive analytics dashboard that suggests pricing strategies.",
-        impact: ["15% revenue uplift for pilot clients", "Reduced analysis time by 90%", "Tracking 50k+ SKUs daily"],
+        title: "ECOMEYE",
+        subtitle: "E-Commerce Intelligence",
+        desc: "AI CFO catching hidden expenses and shipping discrepancies in e-commerce operations.",
+        challenge: ["E-commerce managers focus on gross turnover while losing 15%-20% of net profit due to 'invisible expenses'.", "Manual tracking is impossible for wrong shipping dimensions, dead stock costs, and marketplace commission errors."],
+        solution: ["Automatically detects wrong dimension measurements in invoices via shipping integration.", "Instantly calculates unit economics.", "Analyzes inventory turnover to provide strategies for turning 'Dead Stock' into cash."],
+        impact: ["Pilot businesses achieved an average monthly cost saving of 12% just through shipping leakage detection.", "Business owners gained a proactive and preventive financial vision instead of end-of-month surprise tax and expense tables."],
         color: "from-emerald-500 to-cyan-600",
         icon: <BarChart3 className="w-6 h-6" />,
-        tech: ["Big Data", "Analytics", "Dashboard"],
+        tech: ["FinTech", "Predictive Analytics", "Automation"],
         theme: "tech"
       }
     ]
@@ -159,7 +177,7 @@ function App() {
   }, [selectedProjectIndex]);
 
   const handleEmailClick = () => {
-    window.location.href = "mailto:info@mercanworks.com?subject=Project Inquiry";
+    window.location.href = "mailto:info@mercanworks.com?subject=Inquiry for AI and Software Solutions";
   };
 
   return (
@@ -175,9 +193,10 @@ function App() {
           <span className="font-display font-bold text-xl tracking-tighter text-mercan-900">
             MERCAN<span className="text-mercan-coral">.</span>
           </span>
-          <div className="hidden md:flex space-x-6 text-sm font-medium text-gray-500">
-            <a href="#about" className="hover:text-mercan-900 transition-colors">{t.nav.manifesto}</a>
-            <a href="#projects" className="hover:text-mercan-900 transition-colors">{t.nav.works}</a>
+          <div className="hidden md:flex space-x-6 text-sm font-medium text-gray-400">
+            <a href="#vision" className="hover:text-mercan-900 transition-colors">{t.nav.manifesto}</a>
+            <a href="#labs" className="hover:text-mercan-900 transition-colors">{t.nav.works}</a>
+            <a href="#solutions" className="hover:text-mercan-900 transition-colors">{t.nav.solutions}</a>
             <a href="#contact" className="hover:text-mercan-900 transition-colors">{t.nav.contact}</a>
           </div>
           <button 
@@ -202,30 +221,20 @@ function App() {
             transition={{ duration: 0.8 }}
             className="mb-6 inline-flex items-center space-x-2 border border-black/5 rounded-full px-4 py-1.5 bg-white/50 backdrop-blur-sm shadow-sm"
           >
-            <Sparkles className="w-4 h-4 text-mercan-coral" />
+            <ZapIcon className="w-4 h-4 text-mercan-coral" />
             <span className="text-xs font-mono text-gray-500 tracking-wider uppercase">{t.hero.badge}</span>
           </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-display font-bold text-6xl md:text-8xl lg:text-9xl tracking-tight leading-[0.9] mb-8 text-mercan-900"
-          >
+          <h1 className="font-display font-bold text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[1.1] mb-8 text-mercan-900">
             {t.hero.title1} <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-mercan-coral via-mercan-900 to-mercan-teal">
               {t.hero.title2}
             </span>
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="max-w-2xl mx-auto text-lg md:text-xl text-gray-500 font-light leading-relaxed"
-          >
+          <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-500 font-light leading-relaxed">
             {t.hero.desc}
-          </motion.p>
+          </p>
         </div>
 
         <motion.div
@@ -237,8 +246,36 @@ function App() {
         </motion.div>
       </section>
 
-      <section id="about" className="py-32 relative z-10">
+      {/* Vision Section */}
+      <section id="vision" className="py-32 relative z-10 border-t border-gray-100 bg-white/30">
         <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row gap-16 items-center">
+            <div className="md:w-1/2">
+              <h2 className="font-display font-bold text-5xl mb-8 text-mercan-900">{t.vision.title}</h2>
+              <p className="text-xl text-gray-600 font-light leading-relaxed">
+                {t.vision.desc}
+              </p>
+            </div>
+            <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {t.visionBoxes.map((box, i) => (
+                <div key={i} className="glass-card rounded-3xl flex flex-col p-8 bg-white/60">
+                  <box.icon className="w-10 h-10 text-mercan-coral mb-6" />
+                  <h4 className="font-display font-bold text-lg mb-2">{box.title}</h4>
+                  <p className="text-sm text-gray-500 leading-relaxed">{box.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Solutions Section */}
+      <section id="solutions" className="py-32 relative z-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-20">
+            <span className="text-mercan-coral font-mono text-sm tracking-wider uppercase">{t.solutions.label}</span>
+            <h2 className="font-display font-bold text-5xl mt-2 text-mercan-900">{t.solutions.title}</h2>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {t.features.map((item, i) => (
               <motion.div
@@ -258,7 +295,8 @@ function App() {
         </div>
       </section>
 
-      <section id="projects" className="py-32 relative z-10">
+      {/* Labs Section */}
+      <section id="labs" className="py-32 relative z-10 bg-gray-50/50">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0 }}
@@ -380,24 +418,32 @@ function App() {
                   </div>
                   <span className="font-mono text-sm text-gray-500 uppercase tracking-wider">{selectedProject.subtitle}</span>
                 </div>
-                <h2 className="font-display font-bold text-4xl md:text-6xl text-mercan-900 mb-6">{selectedProject.title}</h2>
+                <h3 className="font-display font-bold text-4xl md:text-6xl text-mercan-900 mb-6 leading-tight">{selectedProject.title}</h3>
                 <p className="text-xl text-gray-600 font-light leading-relaxed border-l-4 border-mercan-coral pl-6">{selectedProject.desc}</p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 text-left">
                 <div className="p-6 bg-gray-50 rounded-2xl">
                    <div className="flex items-center space-x-2 mb-3 text-mercan-900 font-bold">
                       <Zap className="w-4 h-4 text-mercan-coral" />
                       <span>{t.modal.challenge}</span>
                    </div>
-                   <p className="text-sm text-gray-600 leading-relaxed">{selectedProject.challenge}</p>
+                   <ul className="text-sm text-gray-600 leading-relaxed space-y-2">
+                     {selectedProject.challenge.map((item, idx) => (
+                       <li key={idx} className="flex items-start"><span className="mr-2 text-mercan-coral">•</span>{item}</li>
+                     ))}
+                   </ul>
                 </div>
                 <div className="p-6 bg-gray-50 rounded-2xl">
                    <div className="flex items-center space-x-2 mb-3 text-mercan-900 font-bold">
                       <Layers className="w-4 h-4 text-mercan-coral" />
                       <span>{t.modal.solution}</span>
                    </div>
-                   <p className="text-sm text-gray-600 leading-relaxed">{selectedProject.solution}</p>
+                   <ul className="text-sm text-gray-600 leading-relaxed space-y-2">
+                     {selectedProject.solution.map((item, idx) => (
+                       <li key={idx} className="flex items-start"><span className="mr-2 text-mercan-coral">•</span>{item}</li>
+                     ))}
+                   </ul>
                 </div>
                 <div className="p-6 bg-gray-50 rounded-2xl">
                    <div className="flex items-center space-x-2 mb-3 text-mercan-900 font-bold">
@@ -422,7 +468,7 @@ function App() {
                   onClick={handleEmailClick}
                   className="px-6 py-3 bg-mercan-900 text-white rounded-full font-bold text-sm hover:bg-black transition-all cursor-pointer"
                 >
-                  {t.cta.button}
+                  {t.modal.visit}
                 </button>
               </div>
             </motion.div>
@@ -430,7 +476,7 @@ function App() {
         )}
       </AnimatePresence>
 
-      <section id="contact" className="py-32 relative z-10 overflow-hidden">
+      <section id="contact" className="py-32 relative z-10 overflow-hidden border-t border-gray-100">
         <div className="absolute inset-0 bg-gradient-to-t from-mercan-coral/5 to-transparent pointer-events-none" />
         <div className="max-w-4xl mx-auto px-6 text-center relative z-20">
           <h2 className="font-display font-bold text-5xl md:text-7xl mb-8 text-mercan-900">
