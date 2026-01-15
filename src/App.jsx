@@ -117,6 +117,19 @@ const translations = {
     },
     projects: [
       {
+        title: "ECOMEYE",
+        subtitle: "E-Commerce Intelligence",
+        desc: "AI CFO catching hidden expenses and shipping discrepancies in e-commerce operations.",
+        challenge: ["E-commerce managers focus on gross turnover while losing 15%-20% of net profit due to 'invisible expenses'.", "Manual tracking is impossible for wrong shipping dimensions, dead stock costs, and marketplace commission errors."],
+        solution: ["Automatically detects wrong dimension measurements in invoices via shipping integration.", "Instantly calculates unit economics.", "Analyzes inventory turnover to provide strategies for turning 'Dead Stock' into cash."],
+        impact: ["Pilot businesses achieved an average monthly cost saving of 12% just through shipping leakage detection.", "Business owners gained a proactive and preventive financial vision instead of end-of-month surprise tax and expense tables."],
+        color: "from-emerald-500 to-cyan-600",
+        image: "/ecomeye.jpg",
+        icon: <BarChart3 className="w-6 h-6" />,
+        tech: ["FinTech", "Predictive Analytics", "Automation"],
+        theme: "tech"
+      },
+      {
         title: "SHADOW",
         subtitle: "The Shadow Self AI",
         desc: "End-to-end encrypted personal awareness assistant based on Jungian psychology.",
@@ -124,6 +137,7 @@ const translations = {
         solution: ["We developed a custom LLM architecture processing Carl Jung's 'Shadow Self' theory.", "This AI, equipped with crisis protocols, confronts the user with the right questions instead of just offering comfort.", "Data is protected by military-grade encryption and remains completely anonymous."],
         impact: ["In closed beta tests, 85% of users reported faster emotional relief (Catharsis) compared to traditional methods.", "An AI model performing 'Psychological Archetype Analysis' was successfully implemented for the first time in the industry."],
         color: "from-sky-500 to-indigo-600",
+        image: "/golge.jpg",
         icon: <Brain className="w-6 h-6" />,
         tech: ["Psychometrics", "Generative AI", "Encryption"],
         theme: "dark"
@@ -136,21 +150,10 @@ const translations = {
         solution: ["Users have only 1 photo right per month.", "Uploaded 'Goodness' photos pixelate and fade over time, emphasizing the 'transience of the moment'.", "Each post creates an anonymous 'Goodness Pin' on a 5-10km radius map, increasing local community awareness."],
         impact: ["The 'Slow Tech' movement was launched, eliminating social media fatigue and encouraging collaboration over competition.", "An MVP aimed at increasing the sense of belonging in local communities by 90%."],
         color: "from-rose-400 to-purple-500",
+        image: "/mercy.jpg",
         icon: <Heart className="w-6 h-6" />,
         tech: ["Social Engineering", "Anti-Dopamine", "Geo-Location"],
         theme: "light"
-      },
-      {
-        title: "ECOMEYE",
-        subtitle: "E-Commerce Intelligence",
-        desc: "AI CFO catching hidden expenses and shipping discrepancies in e-commerce operations.",
-        challenge: ["E-commerce managers focus on gross turnover while losing 15%-20% of net profit due to 'invisible expenses'.", "Manual tracking is impossible for wrong shipping dimensions, dead stock costs, and marketplace commission errors."],
-        solution: ["Automatically detects wrong dimension measurements in invoices via shipping integration.", "Instantly calculates unit economics.", "Analyzes inventory turnover to provide strategies for turning 'Dead Stock' into cash."],
-        impact: ["Pilot businesses achieved an average monthly cost saving of 12% just through shipping leakage detection.", "Business owners gained a proactive and preventive financial vision instead of end-of-month surprise tax and expense tables."],
-        color: "from-emerald-500 to-cyan-600",
-        icon: <BarChart3 className="w-6 h-6" />,
-        tech: ["FinTech", "Predictive Analytics", "Automation"],
-        theme: "tech"
       }
     ]
   },
@@ -191,6 +194,19 @@ const translations = {
     },
     projects: [
       {
+        title: "ECOMEYE",
+        subtitle: "E-Commerce-Intelligenz",
+        desc: "KI-CFO, der versteckte Kosten und Versandunstimmigkeiten im E-Commerce-Betrieb aufdeckt.",
+        challenge: ["E-Commerce-Manager konzentrieren sich auf den Bruttoumsatz, während sie 15%-20% des Nettogewinns durch 'unsichtbare Kosten' verlieren.", "Manuelle Nachverfolgung ist bei falschen Versandmaßen, Lagerhüterkosten und Marktplatz-Provisionsfehlern unmöglich."],
+        solution: ["Erkennt automatisch falsche Maßangaben in Rechnungen über die Versandintegration.", "Berechnet sofort die Unit Economics.", "Analysiert den Lagerumschlag, um Strategien zu liefern, wie 'totes Kapital' in Bargeld umgewandelt werden kann."],
+        impact: ["Pilotunternehmen erzielten allein durch die Erkennung von Versandverlusten eine durchschnittliche monatliche Kostenersparnis von 12%.", "Geschäftsinhaber erhielten eine proaktive und präventive Finanzvision statt überraschender Steuer- und Kostentabellen am Monatsende."],
+        color: "from-emerald-500 to-cyan-600",
+        image: "/ecomeye.jpg",
+        icon: <BarChart3 className="w-6 h-6" />,
+        tech: ["FinTech", "Predictive Analytics", "Automation"],
+        theme: "tech"
+      },
+      {
         title: "SHADOW",
         subtitle: "Schatten-Selbst-Analyse",
         desc: "End-zu-End verschlüsselter persönlicher Bewusstseins-Assistent basierend auf Jung'scher Psychologie.",
@@ -198,6 +214,7 @@ const translations = {
         solution: ["Wir haben eine eigene LLM-Architektur entwickelt, die Carl Jungs Theorie vom 'Schatten-Selbst' verarbeitet.", "Diese KI, ausgestattet mit Krisenprotokollen, konfrontiert den Nutzer mit den richtigen Fragen, anstatt nur Trost zu spenden.", "Die Daten sind durch militärische Verschlüsselung geschützt und bleiben völlig anonym."],
         impact: ["In geschlossenen Betatests berichteten 85% der Nutzer von einer schnelleren emotionalen Erleichterung (Katharsis) im Vergleich zu herkömmlichen Methoden.", "Ein KI-Modell zur 'Psychologischen Archetypen-Analyse' wurde erstmals in der Branche erfolgreich implementiert."],
         color: "from-sky-500 to-indigo-600",
+        image: "/golge.jpg",
         icon: <Brain className="w-6 h-6" />,
         tech: ["Psychometrics", "Generative AI", "Encryption"],
         theme: "dark"
@@ -210,21 +227,10 @@ const translations = {
         solution: ["Nutzer haben nur 1 Fotorecht pro Monat.", "Hochgeladene 'Güte'-Fotos verpixeln und verblassen mit der Zeit, was die 'Vergänglichkeit des Augenblicks' betont.", "Jeder Post erstellt einen anonymen 'Güte-Pin' auf einer Karte im Umkreis von 5-10km, was das Bewusstsein für die lokale Gemeinschaft stärkt."],
         impact: ["Die 'Slow Tech'-Bewegung wurde gestartet, die Social-Media-Müdigkeit eliminiert und Zusammenarbeit statt Wettbewerb fördert.", "Ein MVP, das darauf abzielt, das Zugehörigkeitsgefühl in lokalen Gemeinschaften um 90% zu steigern."],
         color: "from-rose-400 to-purple-500",
+        image: "/mercy.jpg",
         icon: <Heart className="w-6 h-6" />,
         tech: ["Social Engineering", "Anti-Dopamine", "Geo-Location"],
         theme: "light"
-      },
-      {
-        title: "ECOMEYE",
-        subtitle: "E-Commerce-Intelligenz",
-        desc: "KI-CFO, der versteckte Kosten und Versandunstimmigkeiten im E-Commerce-Betrieb aufdeckt.",
-        challenge: ["E-Commerce-Manager konzentrieren sich auf den Bruttoumsatz, während sie 15%-20% des Nettogewinns durch 'unsichtbare Kosten' verlieren.", "Manuelle Nachverfolgung ist bei falschen Versandmaßen, Lagerhüterkosten und Marktplatz-Provisionsfehlern unmöglich."],
-        solution: ["Erkennt automatisch falsche Maßangaben in Rechnungen über die Versandintegration.", "Berechnet sofort die Unit Economics.", "Analysiert den Lagerumschlag, um Strategien zu liefern, wie 'totes Kapital' in Bargeld umgewandelt werden kann."],
-        impact: ["Pilotunternehmen erzielten allein durch die Erkennung von Versandverlusten eine durchschnittliche monatliche Kostenersparnis von 12%.", "Geschäftsinhaber erhielten eine proaktive und präventive Finanzvision statt überraschender Steuer- und Kostentabellen am Monatsende."],
-        color: "from-emerald-500 to-cyan-600",
-        icon: <BarChart3 className="w-6 h-6" />,
-        tech: ["FinTech", "Predictive Analytics", "Automation"],
-        theme: "tech"
       }
     ]
   }
@@ -409,29 +415,15 @@ function App() {
                 <div className={`relative aspect-[4/3] rounded-3xl overflow-hidden glass-card p-1 shadow-xl ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                   <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-5 group-hover:opacity-10 transition-opacity duration-500`} />
                   <div className="absolute inset-4 rounded-2xl bg-white border border-gray-100 flex items-center justify-center overflow-hidden">
-                    {project.theme === 'dark' && (
-                      <div className="relative w-full h-full flex items-center justify-center bg-slate-50">
-                         <div className="absolute w-40 h-40 bg-indigo-500/10 rounded-full blur-3xl animate-pulse" />
-                         <div className="relative z-10 w-24 h-24 rounded-full border border-indigo-500/20 flex items-center justify-center bg-white shadow-sm">
-                           <div className="w-16 h-16 rounded-full bg-indigo-500/10" />
-                         </div>
-                      </div>
-                    )}
-                    {project.theme === 'light' && (
-                      <div className="relative w-full h-full flex items-center justify-center bg-rose-50/30">
-                        <div className="w-full h-full absolute top-0 left-0 bg-gradient-to-b from-rose-500/5 to-transparent" />
-                        <div className="font-display text-4xl text-rose-300 tracking-widest opacity-50 uppercase">{lang === 'tr' ? 'HUZUR' : 'SERENITY'}</div>
-                      </div>
-                    )}
-                    {project.theme === 'tech' && (
-                      <div className="relative w-full h-full flex items-center justify-center bg-[radial-gradient(#10b98115_1px,transparent_1px)] [background-size:16px_16px]">
-                         <div className="flex gap-2 items-end h-24">
-                            <div className="w-8 bg-emerald-500/20 h-12 rounded-t-sm" />
-                            <div className="w-8 bg-emerald-500/40 h-20 rounded-t-sm" />
-                            <div className="w-8 bg-emerald-500/60 h-16 rounded-t-sm" />
-                         </div>
-                      </div>
-                    )}
+                    
+                    {/* --- RESIM DUZELTMESI BURADA YAPILDI --- */}
+                    <img 
+                      src={project.image} 
+                      alt={project.title} 
+                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" 
+                    />
+                    {/* ------------------------------------- */}
+
                   </div>
                 </div>
 
@@ -576,17 +568,34 @@ function App() {
       </section>
 
       <footer className="py-12 border-t border-gray-200 relative z-10 bg-mercan-50">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center space-x-2 mb-4 md:mb-0">
-            <span className="font-display font-bold text-xl tracking-tighter text-mercan-900">MERCAN<span className="text-mercan-coral">.</span></span>
-          </div>
-          <div className="flex space-x-6 text-sm text-gray-500">
-             <a href="#" className="hover:text-mercan-coral transition-colors">LinkedIn</a>
-             <a href="#" className="hover:text-mercan-coral transition-colors">Instagram</a>
-             <a href="#" className="hover:text-mercan-coral transition-colors">Twitter</a>
-          </div>
-          <div className="mt-4 md:mt-0 text-xs text-gray-400 font-mono">
-            © 2026 Mercan Works. {lang === 'tr' ? 'Tüm hakları saklıdır.' : lang === 'en' ? 'All rights reserved.' : 'Alle Rechte vorbehalten.'}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            
+            <div className="flex flex-col mb-4 md:mb-0">
+               <div className="flex items-center space-x-2">
+                 <span className="font-display font-bold text-xl tracking-tighter text-mercan-900">MERCAN<span className="text-mercan-coral">.</span></span>
+               </div>
+               
+               {/* --- WISE ICIN GEREKLI SIRKET BILGISI ALANI --- */}
+               <div className="mt-4 text-xs text-gray-500 font-mono leading-relaxed">
+                 <p className="font-bold text-gray-800">MERCAN WORKS DIGITAL SOLUTIONS</p>
+                 <p>Harju maakond, Tallinn, Põhja-Tallinna linnaosa, Paavli tn 5a/1, 10412</p>
+               </div>
+               {/* ------------------------------------------- */}
+
+            </div>
+
+            <div className="flex flex-col items-end space-y-4">
+              <div className="flex space-x-6 text-sm text-gray-500">
+                 <a href="#" className="hover:text-mercan-coral transition-colors">LinkedIn</a>
+                 <a href="#" className="hover:text-mercan-coral transition-colors">Instagram</a>
+                 <a href="#" className="hover:text-mercan-coral transition-colors">Twitter</a>
+              </div>
+              <div className="text-xs text-gray-400 font-mono">
+                © 2026 Mercan Works. {lang === 'tr' ? 'Tüm hakları saklıdır.' : lang === 'en' ? 'All rights reserved.' : 'Alle Rechte vorbehalten.'}
+              </div>
+            </div>
+            
           </div>
         </div>
       </footer>
