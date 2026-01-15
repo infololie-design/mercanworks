@@ -40,6 +40,19 @@ const translations = {
     },
     projects: [
       {
+       title: "ECOMEYE",
+        subtitle: "E-Ticaret Zekası",
+        desc: "E-ticaret operasyonlarındaki gizli giderleri ve kargo açıklarını yakalayan AI CFO.",
+        challenge: ["E-ticaret yöneticileri, brüt ciroya odaklanırken 'görünmez giderler' nedeniyle net kârlarında %15-%20'ye varan kayıplar yaşamaktadır.", "Manuel takibi imkansız olan hatalı desi ölçümleri, ölü stok maliyetleri ve komisyon hataları nakit akışını bozmaktadır."],
+        solution: ["Kargo entegrasyonu ile kesilen faturalardaki hatalı desi ölçümlerini otomatik tespit eder.", "Ürün bazlı net kârlılığı (Unit Economics) anlık hesaplar.", "Stok devir hızını analiz ederek 'Ölü Stokları' nakde çevirme stratejisi sunar."],
+        impact: ["Pilot işletmelerde, sadece kargo kaçağı tespitiyle aylık ortalama %12 maliyet tasarrufu sağlandı.", "İşletme sahiplerine proaktif ve önleyici bir finansal vizyon kazandırıldı."],
+        color: "from-emerald-500 to-cyan-600",
+        image: "/ecomeye.jpg",
+        icon: <BarChart3 className="w-6 h-6" />,
+        tech: ["FinTech", "Predictive Analytics", "Automation"],
+        theme: "tech"
+      },
+      {
         title: "GÖLGE",
         subtitle: "Gölge Benlik Analizi",
         desc: "Jung psikolojisi tabanlı, uçtan uca şifreli kişisel farkındalık asistanı.",
@@ -47,6 +60,7 @@ const translations = {
         solution: ["Carl Jung'un 'Gölge Benlik' teorisini işleyen özel bir LLM (Large Language Model) mimarisi geliştirdik.", "Kriz protokollerine sahip bu yapay zeka, kullanıcıyı teselli etmek yerine doğru sorularla yüzleştirir.", "Veriler, askeri düzeyde şifreleme ile korunur ve tamamen anonimdir."],
         impact: ["Kapalı beta testlerinde kullanıcıların %85'i, geleneksel yöntemlere göre daha hızlı bir duygusal rahatlama (Catharsis) yaşadığını bildirdi.", "Sektörde ilk kez 'Psikolojik Arketip Analizi' yapan bir AI modeli başarıyla uygulandı."],
         color: "from-sky-500 to-indigo-600",
+        image: "/golge.jpg",
         icon: <Brain className="w-6 h-6" />,
         tech: ["Psychometrics", "Generative AI", "Encryption"],
         theme: "dark"
@@ -59,21 +73,10 @@ const translations = {
         solution: ["Kullanıcıların ayda sadece 1 fotoğraf hakkı vardır.", "Yüklenen 'İyilik' fotoğrafları, zamanla piksel piksel silinerek 'An'ın geçiciliğini' vurgular.", "Her paylaşım, kullanıcının 5-10km yarıçapındaki haritada anonim bir 'İyilik Pini' oluşturarak yerel topluluk bilincini artırır."],
         impact: ["Sosyal medya yorgunluğunu (Social Media Fatigue) ortadan kaldıran, rekabet yerine iş birliğini teşvik eden 'Yavaş Teknoloji' (Slow Tech) hareketi başlatıldı.", "Yerel topluluklarda aidiyet duygusunu %90 artırmayı hedefleyen bir MVP."],
         color: "from-rose-400 to-purple-500",
+        image: "/mercy.jpg",
         icon: <Heart className="w-6 h-6" />,
         tech: ["Social Engineering", "Anti-Dopamine", "Geo-Location"],
         theme: "light"
-      },
-      {
-        title: "ECOMEYE",
-        subtitle: "E-Ticaret Zekası",
-        desc: "E-ticaret operasyonlarındaki gizli giderleri ve kargo açıklarını yakalayan AI CFO.",
-        challenge: ["E-ticaret yöneticileri, brüt ciroya odaklanırken 'görünmez giderler' nedeniyle net kârlarında %15-%20'ye varan kayıplar yaşamaktadır.", "Manuel takibi imkansız olan hatalı desi ölçümleri, ölü stok maliyetleri ve komisyon hataları nakit akışını bozmaktadır."],
-        solution: ["Kargo entegrasyonu ile kesilen faturalardaki hatalı desi ölçümlerini otomatik tespit eder.", "Ürün bazlı net kârlılığı (Unit Economics) anlık hesaplar.", "Stok devir hızını analiz ederek 'Ölü Stokları' nakde çevirme stratejisi sunar."],
-        impact: ["Pilot işletmelerde, sadece kargo kaçağı tespitiyle aylık ortalama %12 maliyet tasarrufu sağlandı.", "İşletme sahiplerine proaktif ve önleyici bir finansal vizyon kazandırıldı."],
-        color: "from-emerald-500 to-cyan-600",
-        icon: <BarChart3 className="w-6 h-6" />,
-        tech: ["FinTech", "Predictive Analytics", "Automation"],
-        theme: "tech"
       }
     ]
   },
