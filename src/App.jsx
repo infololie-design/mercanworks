@@ -47,7 +47,7 @@ const translations = {
         solution: ["Kargo entegrasyonu ile kesilen faturalardaki hatalı desi ölçümlerini otomatik tespit eder.", "Ürün bazlı net kârlılığı (Unit Economics) anlık hesaplar.", "Stok devir hızını analiz ederek 'Ölü Stokları' nakde çevirme stratejisi sunar."],
         impact: ["Pilot işletmelerde, sadece kargo kaçağı tespitiyle aylık ortalama %12 maliyet tasarrufu sağlandı.", "İşletme sahiplerine proaktif ve önleyici bir finansal vizyon kazandırıldı."],
         color: "from-emerald-500 to-cyan-600",
-        image: "/ecomeye.jpg",
+        image: "/ecomeye.webp",
         icon: <BarChart3 className="w-6 h-6" />,
         tech: ["FinTech", "Predictive Analytics", "Automation"],
         theme: "tech"
@@ -60,7 +60,7 @@ const translations = {
         solution: ["Carl Jung'un 'Gölge Benlik' teorisini işleyen özel bir LLM (Large Language Model) mimarisi geliştirdik.", "Kriz protokollerine sahip bu yapay zeka, kullanıcıyı teselli etmek yerine doğru sorularla yüzleştirir.", "Veriler, askeri düzeyde şifreleme ile korunur ve tamamen anonimdir."],
         impact: ["Kapalı beta testlerinde kullanıcıların %85'i, geleneksel yöntemlere göre daha hızlı bir duygusal rahatlama (Catharsis) yaşadığını bildirdi.", "Sektörde ilk kez 'Psikolojik Arketip Analizi' yapan bir AI modeli başarıyla uygulandı."],
         color: "from-sky-500 to-indigo-600",
-        image: "/golge.jpg",
+        image: "/golge.webp",
         icon: <Brain className="w-6 h-6" />,
         tech: ["Psychometrics", "Generative AI", "Encryption"],
         theme: "dark"
@@ -73,7 +73,7 @@ const translations = {
         solution: ["Kullanıcıların ayda sadece 1 fotoğraf hakkı vardır.", "Yüklenen 'İyilik' fotoğrafları, zamanla piksel piksel silinerek 'An'ın geçiciliğini' vurgular.", "Her paylaşım, kullanıcının 5-10km yarıçapındaki haritada anonim bir 'İyilik Pini' oluşturarak yerel topluluk bilincini artırır."],
         impact: ["Sosyal medya yorgunluğunu (Social Media Fatigue) ortadan kaldıran, rekabet yerine iş birliğini teşvik eden 'Yavaş Teknoloji' (Slow Tech) hareketi başlatıldı.", "Yerel topluluklarda aidiyet duygusunu %90 artırmayı hedefleyen bir MVP."],
         color: "from-rose-400 to-purple-500",
-        image: "/mercy.jpg",
+        image: "/mercy.webp",
         icon: <Heart className="w-6 h-6" />,
         tech: ["Social Engineering", "Anti-Dopamine", "Geo-Location"],
         theme: "light"
@@ -124,7 +124,7 @@ const translations = {
         solution: ["Automatically detects wrong dimension measurements in invoices via shipping integration.", "Instantly calculates unit economics.", "Analyzes inventory turnover to provide strategies for turning 'Dead Stock' into cash."],
         impact: ["Pilot businesses achieved an average monthly cost saving of 12% just through shipping leakage detection.", "Business owners gained a proactive and preventive financial vision instead of end-of-month surprise tax and expense tables."],
         color: "from-emerald-500 to-cyan-600",
-        image: "/ecomeye.jpg",
+        image: "/ecomeye.webp",
         icon: <BarChart3 className="w-6 h-6" />,
         tech: ["FinTech", "Predictive Analytics", "Automation"],
         theme: "tech"
@@ -137,7 +137,7 @@ const translations = {
         solution: ["We developed a custom LLM architecture processing Carl Jung's 'Shadow Self' theory.", "This AI, equipped with crisis protocols, confronts the user with the right questions instead of just offering comfort.", "Data is protected by military-grade encryption and remains completely anonymous."],
         impact: ["In closed beta tests, 85% of users reported faster emotional relief (Catharsis) compared to traditional methods.", "An AI model performing 'Psychological Archetype Analysis' was successfully implemented for the first time in the industry."],
         color: "from-sky-500 to-indigo-600",
-        image: "/golge.jpg",
+        image: "/golge.webp",
         icon: <Brain className="w-6 h-6" />,
         tech: ["Psychometrics", "Generative AI", "Encryption"],
         theme: "dark"
@@ -150,7 +150,7 @@ const translations = {
         solution: ["Users have only 1 photo right per month.", "Uploaded 'Goodness' photos pixelate and fade over time, emphasizing the 'transience of the moment'.", "Each post creates an anonymous 'Goodness Pin' on a 5-10km radius map, increasing local community awareness."],
         impact: ["The 'Slow Tech' movement was launched, eliminating social media fatigue and encouraging collaboration over competition.", "An MVP aimed at increasing the sense of belonging in local communities by 90%."],
         color: "from-rose-400 to-purple-500",
-        image: "/mercy.jpg",
+        image: "/mercy.webp",
         icon: <Heart className="w-6 h-6" />,
         tech: ["Social Engineering", "Anti-Dopamine", "Geo-Location"],
         theme: "light"
@@ -201,7 +201,7 @@ const translations = {
         solution: ["Erkennt automatisch falsche Maßangaben in Rechnungen über die Versandintegration.", "Berechnet sofort die Unit Economics.", "Analysiert den Lagerumschlag, um Strategien zu liefern, wie 'totes Kapital' in Bargeld umgewandelt werden kann."],
         impact: ["Pilotunternehmen erzielten allein durch die Erkennung von Versandverlusten eine durchschnittliche monatliche Kostenersparnis von 12%.", "Geschäftsinhaber erhielten eine proaktive und präventive Finanzvision statt überraschender Steuer- und Kostentabellen am Monatsende."],
         color: "from-emerald-500 to-cyan-600",
-        image: "/ecomeye.jpg",
+        image: "/ecomeye.webp",
         icon: <BarChart3 className="w-6 h-6" />,
         tech: ["FinTech", "Predictive Analytics", "Automation"],
         theme: "tech"
@@ -214,7 +214,7 @@ const translations = {
         solution: ["Wir haben eine eigene LLM-Architektur entwickelt, die Carl Jungs Theorie vom 'Schatten-Selbst' verarbeitet.", "Diese KI, ausgestattet mit Krisenprotokollen, konfrontiert den Nutzer mit den richtigen Fragen, anstatt nur Trost zu spenden.", "Die Daten sind durch militärische Verschlüsselung geschützt und bleiben völlig anonym."],
         impact: ["In geschlossenen Betatests berichteten 85% der Nutzer von einer schnelleren emotionalen Erleichterung (Katharsis) im Vergleich zu herkömmlichen Methoden.", "Ein KI-Modell zur 'Psychologischen Archetypen-Analyse' wurde erstmals in der Branche erfolgreich implementiert."],
         color: "from-sky-500 to-indigo-600",
-        image: "/golge.jpg",
+        image: "/golge.webp",
         icon: <Brain className="w-6 h-6" />,
         tech: ["Psychometrics", "Generative AI", "Encryption"],
         theme: "dark"
@@ -227,7 +227,7 @@ const translations = {
         solution: ["Nutzer haben nur 1 Fotorecht pro Monat.", "Hochgeladene 'Güte'-Fotos verpixeln und verblassen mit der Zeit, was die 'Vergänglichkeit des Augenblicks' betont.", "Jeder Post erstellt einen anonymen 'Güte-Pin' auf einer Karte im Umkreis von 5-10km, was das Bewusstsein für die lokale Gemeinschaft stärkt."],
         impact: ["Die 'Slow Tech'-Bewegung wurde gestartet, die Social-Media-Müdigkeit eliminiert und Zusammenarbeit statt Wettbewerb fördert.", "Ein MVP, das darauf abzielt, das Zugehörigkeitsgefühl in lokalen Gemeinschaften um 90% zu steigern."],
         color: "from-rose-400 to-purple-500",
-        image: "/mercy.jpg",
+        image: "/mercy.webp",
         icon: <Heart className="w-6 h-6" />,
         tech: ["Social Engineering", "Anti-Dopamine", "Geo-Location"],
         theme: "light"
@@ -604,3 +604,4 @@ function App() {
 }
 
 export default App;
+
