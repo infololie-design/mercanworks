@@ -578,7 +578,7 @@ function App() {
                
                {/* --- WISE ICIN GEREKLI SIRKET BILGISI ALANI --- */}
                <div className="mt-4 text-xs text-gray-500 font-mono leading-relaxed">
-                 <p className="font-bold text-gray-800">MercanWorks OÜ</p>
+                 <p className="font-bold text-gray-800">MERCANWORKS OÜ</p>
                  <p>Harju maakond, Tallinn, Põhja-Tallinna linnaosa, Paavli tn 5a/1, 10412</p>
                </div>
                {/* ------------------------------------------- */}
@@ -604,5 +604,6 @@ function App() {
 }
 
 export default App;
+
 
 
